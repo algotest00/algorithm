@@ -1,3 +1,10 @@
+/* 시뮬레이션 + DFS(깊이 우선 탐색)
+ * 풀이시간 2시간
+ * 지울 수 있는가에 대한 로직을 잘 못 이해했음=> 문제 조건을 더 정확히 파악하고 시작할 것!
+ * - 요청 단어 길이 == 1 → DFS 탐색을 통해 외부와 연결되었는지 확인 후 제거
+ * - 요청 단어 길이 >= 2 → 조건 없이 해당 문자를 모두 제거
+ */
+import java.util.*;
 class Solution {
     static int[][] dir = {{1,0},{0,1},{-1,0},{0,-1}};
     static char[][] map;
@@ -15,9 +22,7 @@ class Solution {
                 map[i][j] = storage[i].charAt(j);
             }
         }
-        
 
-        
         for(int i = 0; i < requests.length; i++) {
             char word = requests[i].charAt(0);
             int wordLength = requests[i].length();
@@ -79,7 +84,5 @@ class Solution {
         }
         return false;
     }
-    
-    
  
 }
