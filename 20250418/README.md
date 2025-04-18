@@ -1,4 +1,4 @@
-# 4월 2주차 문제
+# 4월 3주차 문제
 - [타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
 - [서버 증설 횟수](https://school.programmers.co.kr/learn/courses/30/lessons/389479)
 
