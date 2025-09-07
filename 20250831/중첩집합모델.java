@@ -22,8 +22,9 @@ public class 중첩집합모델 {
   public static void main(String[] args) {
     N = sc.nextInt();
     graph = new ArrayList[N + 1];
-    for (int i = 1; i <= N; i++)
+    for (int i = 1; i <= N; i++) {
       graph[i] = new ArrayList<>();
+    }
 
     for (int i = 0; i < N; i++) {
       int a = sc.nextInt();
@@ -92,12 +93,5 @@ public class 중첩집합모델 {
       return Long.parseLong(next());
     }
 
-    String nextLine() {
-      try {
-        return br.readLine();
-      } catch (IOException e) {
-        throw new RuntimeException(e);
-      }
-    }
   }
 }
